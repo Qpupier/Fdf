@@ -6,7 +6,7 @@
 /*   By: qpupier <qpupier@student.le-101.fr>        +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/02/19 11:12:36 by qpupier      #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/12 18:13:20 by qpupier     ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/08/07 14:54:43 by qpupier     ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -98,7 +98,7 @@ void	ft_line_horiz(t_param *p, int a, int z, double b)
 	double	dx;
 
 	x1 = p->result[a].x1;
-	d = 1 / (double)(p->result[z].x1 - x1);
+	d = 1.0 / (p->result[z].x1 - x1);
 	dx = (p->result[z].y1 - p->result[a].y1) * d;
 	while (p->result[z].x1 - x1)
 	{
